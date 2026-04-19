@@ -22,7 +22,6 @@ def encode_file(file_path):
 def call_claude(system_prompt, user_prompt, attachments):
     content = []
     
-    # Add Attachments
     for file_name in attachments:
         file_path = os.path.join("data", "files", file_name)
         ext = file_name.split('.')[-1].lower()
@@ -88,11 +87,10 @@ def run_benchmark():
         print(f"Running {test['id']}...")
         
         # Anthropic Run
-        """try:
+        try:
             claude_res = call_claude(test['system_prompt'], test['user_prompt'], test['attachments'])
         except Exception as e:
             claude_res = f"Error: {e}"
-        """
         # Google Run
         try:
             gemini_res = call_gemini_with_retry(test['system_prompt'], test['user_prompt'], test['attachments'])
