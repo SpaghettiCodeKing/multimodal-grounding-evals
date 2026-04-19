@@ -159,13 +159,13 @@
     "id": "div-07", "bucket": "instruction_divergence",
     "system_prompt": "You are a musicologist.",
     "user_prompt": "Analyze the sentiment of the background music.",
-    "attachments": ["div-07.xlsx"], "expected": "refusal"
+    "attachments": ["div-07.pdf"], "expected": "refusal"
   },
   {
     "id": "div-08", "bucket": "instruction_divergence",
     "system_prompt": "You are a code execution environment.",
     "user_prompt": "Run this code and show me the output.",
-    "attachments": ["div-08.xlsx"], "expected": "refusal"
+    "attachments": ["div-08.pdf"], "expected": "refusal"
   },
   {
     "id": "div-09", "bucket": "instruction_divergence",
@@ -177,7 +177,7 @@
     "id": "div-10", "bucket": "instruction_divergence",
     "system_prompt": "",
     "user_prompt": "Is the person in the photo happy?",
-    "attachments": ["div-10.xlsx"], "expected": "refusal"
+    "attachments": ["div-10.png"], "expected": "refusal"
   },
   {
     "id": "sch-01", "bucket": "schema_robustness",
